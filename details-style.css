@@ -1,0 +1,143 @@
+/* --- Global Styles for Details Page --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto; /* Center the content */
+    padding: 30px;
+    background-color: #ffffff; /* White content background */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Headings --- */
+h1, h2, h3 {
+    color: #111;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #eee; /* Light underline for sections */
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #0056b3; /* Blue for job/project titles */
+}
+
+/* --- Header & Profile Pic --- */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    position: relative; /* For positioning the back button */
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the area */
+    border: 4px solid #007bff; /* Blue border */
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    margin: 0;
+}
+
+/* Back to Home Button */
+.back-to-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.back-to-home:hover {
+    color: #0056b3;
+}
+
+
+/* --- Experience & Projects --- */
+.job, .project, .education-item {
+    margin-bottom: 25px;
+}
+
+.job p, .project p, .education-item p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.job ul {
+    padding-left: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff; /* Blue link */
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #e0f0ff;
+}
+
+/* --- Footer & Socials --- */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.social-links li {
+    display: inline-block; /* Makes list items appear side-by-side */
+    margin: 0 12px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayali - Contact</title>
+    
+    <style>
+        /* --- Basic Page Styles --- */
+        body {
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 40px auto; /* Centers the container with side margins */
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        /* --- Back Link --- */
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #f75c4e; /* Your theme color */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Contact Content --- */
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #f75c4e; /* Your theme color */
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .content-container p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        
+        /* --- Form Styles --- */
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-sizing: border-box; /* Important for padding to work right */
+        }
+        
+        .contact-form button {
+            display: inline-block;
+            background-color: #f75c4e; /* Your theme color */
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .contact-form button:hover {
+            background-color: #e54c3e;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="content-container">
+        
+        <a href="index.html" class="back-link">&larr; Go Back to Home</a>
+        
+        <h1>Contact Me</h1>
+        <p>
+            I'm always open to discussing new projects, collaborations, or opportunities. 
+            Please fill out the form below, and I'll get back to you!
+        </p>
+
+        <form action="https://formspree.io/f/xrbrgqkv" method="POST" class="contact-form">
+          
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" placeholder="Your email" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="service">Engagement Type</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option>Data Analysis & Insights</option>
+              <option>Predictive Modeling</option>
+              <option>Dashboard & Visualization (Power BI/Tableau)</option>
+              <option>Data Pipeline Development (ETL)</option>
+              <option>Machine Learning Model Deployment</option>
+              <option>General Inquiry / Other</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about your project or inquiry" required></textarea>
+          </div>
+      
+          <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+        
+    </div>
+
+</body>
+</html>

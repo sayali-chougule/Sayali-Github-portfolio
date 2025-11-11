@@ -1,0 +1,270 @@
+/* --- Global Styles --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8; /* Light background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Make body take full viewport height */
+    overflow: hidden; /* Hide scrollbars if illustration goes slightly out */
+}
+
+/* --- Hero Container --- */
+.hero-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 40px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* --- Top Navigation --- */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 50px; /* Space between nav and main content */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.logo p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+.contact-info span, .contact-info .nav-link {
+    margin-left: 20px;
+    font-size: 0.9rem;
+    color: #555;
+    text-decoration: none;
+}
+
+.contact-info .nav-link {
+    color: #007bff; /* Blue for links */
+    font-weight: 500;
+}
+
+.contact-info .nav-link:hover {
+    text-decoration: underline;
+}
+
+/* --- Hero Content (Two Columns) --- */
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /* Space between columns */
+    /* margin-top: 50px; */
+}
+
+.text-column {
+    flex: 1; /* Takes available space */
+    max-width: 70%; /* Limit text column width */
+    margin-top: 10px;
+}
+
+.illustration-column {
+    flex: 1; /* Takes available space */
+    max-width: 50%; /* Limit illustration column width */
+    text-align: right; /* Align image to the right */
+}
+
+.illustration-column img {
+    max-width: 100%;
+    /* height: auto; */
+    height: auto;
+    /* display: block;  */
+    /* Remove extra space below image */
+    margin-top: -40px; /* margin-bottom: 60px; */
+    max-height: 75vh;
+}
+
+/* --- Text Styling --- */
+.about-me-tag {
+    background-color: #f0f8ff; /* Light blue background */
+    color: #007bff; /* Blue text */
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #111;
+    margin: 0 0 10px 0;
+    line-height: 1.1;
+}
+
+.highlight {
+    color: #f75c4e; /* Red/Orange highlight color */
+}
+
+.role {
+    font-size: 1.8rem;
+    color: black;
+    margin: 0 0 20px 0;
+    font-weight: 500;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: black;
+    margin-bottom: 40px;
+    max-width: 450px;
+}
+
+/* --- Hire Me Button --- */
+.hire-me-button {
+    display: inline-block;
+    background-color: #f75c4e; /* Red/Orange button */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.hire-me-button1 {
+    display: inline-block;
+    background-color: white;  /* Red/Orange button */
+    color: black;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.hire-me-button:hover {
+    background-color: #e54c3e;
+}
+
+/* --- Social Icons --- */
+.social-icons a {
+    color: #888;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f75c4e; /* Highlight on hover */
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+    .hero-content {
+        flex-direction: column; /* Stack columns on smaller screens */
+        text-align: center;
+    }
+    .text-column, .illustration-column {
+        max-width: 100%;
+    }
+    .illustration-column {
+        order: -1; /* Move illustration above text on small screens */
+        margin-bottom: 30px;
+    }
+    .tagline {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .top-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contact-info span, .contact-info .nav-link {
+        margin: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .role {
+        font-size: 1.5rem;
+    }
+    .hero-container {
+        padding: 20px;
+    }
+}
+
+
+/* --- Basic Setup --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Ensures navbar touches the edges */
+}
+
+/* --- Navbar Container --- */
+.navbar {
+    /* The dark blue background from your image */
+    background-color: #f75c4e; 
+    
+    /* Padding for spacing */
+    padding: 10px 25px; 
+    
+    /* You can use this to center the links */
+    display: flex;
+    justify-content: center; /* or flex-start, or flex-end */
+    align-items: center;
+}
+
+/* --- Navigation Links List (UL) --- */
+.nav-links {
+    list-style: none;
+    display: flex; /* This makes the li elements horizontal */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    padding: 0 15px; /* Spacing between links */
+}
+
+/* --- Navigation Links (A) --- */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase; /* Makes text all caps like your image */
+    font-family: 'Arial Narrow', 'Impact', sans-serif; /* A bold, condensed font */
+    letter-spacing: 1px;
+    font-size: 1rem;
+    
+    /* For smooth hover effect */
+    transition: color 0.3s ease; 
+}
+
+.nav-links a:hover {
+    color: #cccccc; /* A light grey for hover */
+}
+
+.illustration-column {
+    background-color: #f8f8f8; 
+    padding-top: 60px; /* pushes image downward hiding arrow */
+}
